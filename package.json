@@ -1,0 +1,50 @@
+{
+  "name": "higher-order",
+  "version": "0.1.0",
+  "description": "A simple javascript utility for composing Higher-order Components.",
+  "main": "lib/higherOrder.js",
+  "scripts": {
+    "build": "npm run build:lib",
+    "build:lib": "babel src --out-dir lib",
+    "lint": "eslint src",
+    "test": "npm run lint && npm run test:node",
+    "test:ci": "npm run lint && && npm run test:coverage",
+    "test:coverage": "babel-node ./node_modules/.bin/isparta cover _mocha",
+    "test:node": "mocha --compilers js:babel-core/register --recursive",
+    "test:watch": "npm test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naoufal/higher-order.git"
+  },
+  "keywords": [
+    "utility",
+    "util",
+    "react",
+    "higher-order",
+    "component"
+  ],
+  "author": "Naoufal Kadhom",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/naoufal/higher-order/issues"
+  },
+  "homepage": "https://github.com/naoufal/higher-order#readme",
+  "devDependencies": {
+    "babel-cli": "6.6.5",
+    "babel-core": "6.6.5",
+    "babel-eslint": "5.0.0",
+    "babel-preset-es2015": "6.6.0",
+    "babel-preset-react": "6.5.0",
+    "babel-register": "6.6.5",
+    "coveralls": "2.11.8",
+    "eslint": "2.3.0",
+    "eslint-config-airbnb": "6.1.0",
+    "eslint-plugin-react": "4.2.0",
+    "expect": "1.14.0",
+    "isparta": "4.0.0",
+    "istanbul": "0.4.2",
+    "mocha": "2.4.5",
+    "react": "0.14.7"
+  }
+}
