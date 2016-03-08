@@ -1,7 +1,7 @@
 {
   "name": "higher-order",
   "version": "0.1.0",
-  "description": "A simple javascript utility for composing Higher-order Components.",
+  "description": "A simple JavaScript utility for composing Higher-order Components.",
   "main": "lib/higherOrder.js",
   "scripts": {
     "build": "npm run build:lib",
